@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camino al Éxito - Versión Física | Próximamente</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #0a0a0a;
+            --primary-gold: #CDAD7D;
+            --secondary-gold: #AA8A5A;
+            --accent-purple: #4a148c;
+            --text-light: #f4f1ec;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            height: 100vh;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(74, 20, 140, 0.2) 0%, rgba(10, 10, 10, 1) 70%);
+            z-index: 1;
+        }
+
+        .characters-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 2;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .character-float {
+            position: absolute;
+            width: 120px;
+            height: auto;
+            filter: drop-shadow(0 0 10px rgba(205, 173, 125, 0.3));
+            animation: float 15s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-50px) rotate(10deg);
+            }
+
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        /* Random positioning for background characters */
+        .char-1 {
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .char-2 {
+            top: 20%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .char-3 {
+            bottom: 15%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        .char-4 {
+            bottom: 30%;
+            right: 5%;
+            animation-delay: 1s;
+        }
+
+        .char-5 {
+            top: 5%;
+            right: 40%;
+            animation-delay: 3s;
+        }
+
+        .content-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            padding: 4rem;
+            border: 1px solid rgba(205, 173, 125, 0.2);
+            border-radius: 20px;
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-gold), var(--text-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            color: rgba(244, 241, 236, 0.8);
+        }
+
+        .form-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        input[type="email"] {
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid var(--primary-gold);
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 1rem;
+            width: 350px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input[type="email"]:focus {
+            box-shadow: 0 0 15px rgba(205, 173, 125, 0.3);
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            border: none;
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            color: var(--primary-dark);
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(205, 173, 125, 0.3);
+        }
+
+        .back-link {
+            margin-top: 2rem;
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            z-index: 20;
+        }
+
+        .back-link a {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .back-link a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-card {
+                padding: 2rem;
+            }
+
+            input[type="email"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+
+    <div class="back-link">
+        <a href="index.html">&larr; VOLVER AL INICIO</a>
+    </div>
+
+    <div class="characters-container" id="bg-chars">
+        <!-- Javascript will populate this with 4 random floating characters -->
+    </div>
+
+    <div class="container">
+        <div class="content-card">
+            <h5 style="color: var(--primary-gold); margin-bottom: 1rem; letter-spacing: 3px; font-weight: 700;">CAMINO
+                AL ÉXITO</h5>
+            <h1>PRÓXIMAMENTE</h1>
+            <p class="subtitle">
+                Estamos preparando una experiencia física que transformará tus reuniones.
+                <br>El juego de mesa que desafía tu <strong>Libertad, Liderazgo, Legado y Locura</strong> está en
+                camino.
+            </p>
+
+            <div
+                style="margin: 3rem 0; position: relative; height: 300px; display: flex; justify-content: center; align-items: center;">
+                <!-- Main featured characters -->
+                <img src="assets/game_characters/char_cube.png" alt="Character Cube"
+                    style="height: 100%; filter: drop-shadow(0 0 20px rgba(255,255,255,0.2)); z-index: 5; position: relative;">
+                <img src="assets/game_characters/char_rocket.png" alt="Character Rocket"
+                    style="height: 80%; position: absolute; left: 10%; opacity: 0.6; filter: blur(2px);">
+                <img src="assets/game_characters/char_hat.png" alt="Character Hat"
+                    style="height: 80%; position: absolute; right: 10%; opacity: 0.6; filter: blur(2px);">
+            </div>
+
+            <h3 style="margin-bottom: 1rem;">SÉ EL PRIMERO EN ENTERARTE</h3>
+            <p>Suscríbete para recibir noticias exclusivas y acceso anticipado a la preventa.</p>
+
+            <form class="form-group"
+                onsubmit="event.preventDefault(); alert('¡Gracias por tu interés! Te mantendremos informado.');">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">NOTIFICARME</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Simple script to randomize float animations or positions if needed
+        const charsContainer = document.getElementById('bg-chars');
+        // We could dynamically add more images here from the assets folder if we had a list, 
+        // but for now the CSS classes handle the floating positions of static elements if we added them.
+        // Let's add some background floating elements manually for effect using the images we have.
+
+        const charImages = [
+            'char_bulb.png',
+            'char_coin.png',
+            'char_medal.png',
+            'char_trophy.png'
+        ];
+
+        charImages.forEach((img, index) => {
+            const el = document.createElement('img');
+            el.src = `assets/game_characters/${img}`;
+            el.className = `character-float char-${index + 1}`;
+            charsContainer.appendChild(el);
+        });
+    </script>
+</body>
+
+</html>
