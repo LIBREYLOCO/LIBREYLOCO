@@ -16,7 +16,7 @@ export function renderNavbar() {
                     <li><a href="#main-footer">Contacto</a></li>
                 </ul>
                 <div class="nav-cta">
-                    <a href="index.html" class="btn btn-primary">Comenzar</a>
+                    <a href="index.html" class="btn btn-primary">Home</a>
                 </div>
                 <button class="mobile-menu-btn" aria-label="Menu">
                     <span></span>
