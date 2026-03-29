@@ -1,26 +1,361 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ═══════════════════════════════════════════
+   VAPOR CLINIC — Design System
+   Ethereal · Translucent · Futuristic
+   ═══════════════════════════════════════════ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-vapor-100: var(--vapor-100);
+  --color-vapor-200: var(--vapor-200);
+  --color-vapor-300: var(--vapor-300);
+  --color-vapor-400: var(--vapor-400);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-glass: var(--glass);
+  --color-glass-border: var(--glass-border);
+  --font-display: var(--font-clash);
+  --font-body: var(--font-satoshi);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  /* Core palette */
+  --bg: #0a0a0f;
+  --bg-deep: #050508;
+  --fg: #e8e6f0;
+  --fg-muted: #8a879e;
+  --fg-dim: #706b8a;
+
+  /* Vapor gradient spectrum */
+  --vapor-100: #c4b5fd;
+  --vapor-200: #a78bfa;
+  --vapor-300: #8b5cf6;
+  --vapor-400: #7c3aed;
+
+  /* Accent */
+  --accent: #06ffa5;
+  --accent-soft: rgba(6, 255, 165, 0.12);
+
+  /* Glass */
+  --glass: rgba(255, 255, 255, 0.03);
+  --glass-heavy: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  /* Glow */
+  --glow-purple: rgba(139, 92, 246, 0.15);
+  --glow-accent: rgba(6, 255, 165, 0.1);
+
+  /* Spacing rhythm */
+  --section-gap: clamp(6rem, 12vh, 10rem);
+
+  /* Fonts */
+  --font-clash: 'Clash Display', system-ui, sans-serif;
+  --font-satoshi: 'Satoshi', system-ui, sans-serif;
+}
+
+/* ═══ Base ═══ */
+
+html {
+  scroll-behavior: auto; /* Lenis handles smooth scroll */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-satoshi);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--vapor-300);
+  color: var(--bg);
+}
+
+/* ═══ Noise Overlay ═══ */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px;
+}
+
+/* ═══ Glass Card ═══ */
+
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+}
+
+.glass-heavy {
+  background: var(--glass-heavy);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+/* ═══ Glow Effects ═══ */
+
+.glow-purple {
+  box-shadow: 0 0 60px var(--glow-purple), 0 0 120px rgba(139, 92, 246, 0.05);
+}
+
+.glow-accent {
+  box-shadow: 0 0 40px var(--glow-accent);
+}
+
+/* ═══ Text Gradient ═══ */
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--vapor-100) 0%, var(--vapor-300) 50%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-subtle {
+  background: linear-gradient(135deg, var(--fg) 0%, var(--vapor-200) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ═══ Divider ═══ */
+
+.vapor-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--glass-border) 20%,
+    var(--vapor-300) 50%,
+    var(--glass-border) 80%,
+    transparent 100%
+  );
+  opacity: 0.5;
+}
+
+/* ═══ Floating Shadow ═══ */
+
+.float-shadow {
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 40px var(--glow-purple);
+}
+
+/* ═══ Scroll indicator ═══ */
+
+.scroll-indicator {
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(8px); }
+}
+
+/* ═══ Stagger entrance base ═══ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+}
+
+/* ═══ Loader ═══ */
+
+.loader-bar {
+  transform-origin: left;
+  animation: loaderFill 2.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes loaderFill {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+.loader-counter {
+  animation: counterFade 2.5s ease forwards;
+}
+
+@keyframes counterFade {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ═══ Reduced motion ═══ */
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+  .scroll-indicator {
+    animation: none;
+    opacity: 0.6;
+  }
+  .loader-bar {
+    animation: none;
+    transform: scaleX(1);
+  }
+}
+
+/* ═══ Custom scrollbar ═══ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--fg-dim);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vapor-300);
+}
+
+/* ═══ Blog Post Typography ═══ */
+
+.post-body {
+  max-width: 65ch;
+}
+
+.post-h2 {
+  font-family: var(--font-clash);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+}
+
+.post-h3 {
+  font-family: var(--font-clash);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 500;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--vapor-200);
+}
+
+.post-p {
+  color: var(--fg-muted);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.post-p strong {
+  color: var(--fg);
+  font-weight: 500;
+}
+
+.post-p em {
+  color: var(--vapor-100);
+  font-style: italic;
+}
+
+.post-ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.post-li {
+  color: var(--fg-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.post-li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--vapor-300);
+}
+
+.post-li strong {
+  color: var(--fg);
+  font-weight: 500;
+}
+
+/* ═══ ElevenLabs Widget Override ═══ */
+
+elevenlabs-convai {
+  /* Move to bottom-right with some breathing room */
+  --el-widget-bottom: 24px;
+  --el-widget-right: 24px;
+}
+
+/* Target the shadow host's button via ::part or global overrides */
+elevenlabs-convai::part(widget) {
+  background: rgba(10, 10, 15, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(139, 92, 246, 0.25) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.15), 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Override the widget container if it uses iframes or divs */
+elevenlabs-convai div,
+elevenlabs-convai button {
+  background: transparent !important;
+}
+
+/* Wrapper styling for the floating button area */
+.elevenlabs-widget-wrapper {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+  animation: elevenLabsFadeIn 0.6s ease-out forwards;
+}
+
+@keyframes elevenLabsFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
