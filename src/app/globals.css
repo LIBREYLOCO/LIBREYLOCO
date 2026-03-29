@@ -351,7 +351,7 @@ body::before {
   transition: opacity 0.8s ease;
 }
 
-.post-img[src]:not([src=""]) {
+.post-img--loaded {
   opacity: 1;
 }
 

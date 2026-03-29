@@ -43,6 +43,27 @@ export default function PostBody({ content }: { content: string }) {
   const bodyRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!bodyRef.current) return;
+
+    // Handle image load/error states
+    const imgs = bodyRef.current.querySelectorAll<HTMLImageElement>(".post-img");
+    imgs.forEach((img) => {
+      img.onload = () => {
+        img.classList.add("post-img--loaded");
+      };
+      img.onerror = () => {
+        const figure = img.closest(".post-figure");
+        if (figure) (figure as HTMLElement).style.display = "none";
+      };
+      // If already loaded (cached)
+      if (img.complete && img.naturalWidth > 0) {
+        img.classList.add("post-img--loaded");
+      } else if (img.complete) {
+        const figure = img.closest(".post-figure");
+        if (figure) (figure as HTMLElement).style.display = "none";
+      }
+    });
+
     const ctx = gsap.context(() => {
       gsap.utils
         .toArray<HTMLElement>(".post-h2, .post-h3, .post-p, .post-li, .post-figure")
