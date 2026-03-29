@@ -316,6 +316,66 @@ body::before {
   font-weight: 500;
 }
 
+/* ═══ Blog Post Images ═══ */
+
+.post-figure {
+  margin: 2.5rem -2rem;
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .post-figure {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+.post-img-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 21 / 9;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--vapor-400) 15%, var(--bg-deep)),
+    color-mix(in srgb, var(--vapor-300) 8%, var(--bg))
+  );
+}
+
+.post-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.post-img[src]:not([src=""]) {
+  opacity: 1;
+}
+
+.post-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 40%,
+    color-mix(in srgb, var(--bg) 60%, transparent) 100%
+  );
+  pointer-events: none;
+}
+
+.post-figcaption {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--fg-dim);
+  font-style: italic;
+  opacity: 0.7;
+}
+
 /* ═══ ElevenLabs Widget Override ═══ */
 
 elevenlabs-convai {

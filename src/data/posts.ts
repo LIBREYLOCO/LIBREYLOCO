@@ -17,6 +17,8 @@ export const posts: BlogPost[] = [
     excerpt:
       "Estaba sentado en mi oficina, mirando la pantalla, cuando me golpeó una realización: estaba viviendo, pero no estaba realmente vivo. Una sola pregunta lo cambió todo.",
     content: `
+![Una silueta solitaria frente a una ventana luminosa en una oficina oscura, con fragmentos de luz flotando como preguntas sin respuesta](/blog/post01-oficina-pregunta.webp)
+
 ## El momento de quiebre
 
 Estaba sentado en mi oficina, mirando la pantalla del ordenador, cuando me golpeó una realización que cambiaría mi trayectoria para siempre: **estaba viviendo, pero no estaba realmente vivo.**
@@ -32,6 +34,8 @@ En ese momento se formó la pregunta que reescribiría mi historia:
 Quería cambiar la educación. Soñaba con un colegio que abarcara desde kinder hasta secundaria, donde los niños no solo aprendieran, sino que también fueran felices. Imaginé un lugar donde el aprendizaje fuera una experiencia dinámica, interactiva y alegre.
 
 La gente a mi alrededor pensó que estaba loco. Y probablemente lo estaba. Pero la locura, cuando se ejecuta con disciplina, se convierte en visión.
+
+![Un aula futurista bañada en luz dorada donde niños exploran con asombro, mezclando naturaleza y tecnología](/blog/post01-escuela-futuro.webp)
 
 ## La creación de NWL
 
@@ -77,6 +81,8 @@ La respuesta que aparezca, por loca que suene, es tu primer mapa. Tu primer acto
     excerpt:
       "Las palabras actúan como anclas o como alas. 'Fracasé' es una sentencia. 'No lo he logrado AÚN' es un proceso. La diferencia entre rendirse y seguir está en una sola palabra.",
     content: `
+![Cadenas de texto oscuro desintegrándose en partículas de luz dorada que forman la palabra AÚN](/blog/post02-cadenas-palabras.webp)
+
 ## La palabra que nunca debería haberse perdido
 
 Hay una verdad incómoda sobre el lenguaje: las palabras que usamos para describir nuestra vida construyen nuestra prisión o nuestra libertad.
@@ -102,6 +108,8 @@ Ahora, agrega tres letras:
 No es optimismo ingenuo. No es pensamiento positivo barato. Es algo mucho más potente: **realismo radical**. Reconoce la dificultad del presente pero le añade la dimensión del tiempo y del potencial.
 
 Cuando dices "no puedo", estás sellando pasado, presente y futuro en una sola palabra. Cuando dices "aún no puedo", estás describiendo un presente abierto, con un futuro negociable.
+
+![Un teatro vacío con un foco solitario iluminando un escenario donde una semilla germina entre las tablas](/blog/post02-teatro-semilla.webp)
 
 ## Van Gogh y el silencio
 
@@ -159,6 +167,8 @@ Tu historia no ha terminado. **Aún.**
     excerpt:
       "Llevo más de 15 cirugías en el húmero. Cada operación fue emprendida con la esperanza de recuperar la estabilidad. Cada día que puedo moverlo, lo veo como una victoria.",
     content: `
+![Una escultura dorada con grietas luminosas estilo kintsugi, irradiando luz desde sus fracturas en la oscuridad](/blog/post03-kintsugi-dorado.webp)
+
 ## La confesión
 
 Para ser completamente honesto contigo, llevo más de 15 cirugías en el húmero debido a una fractura compleja que simplemente no ha querido soldar.
@@ -182,6 +192,8 @@ Pero aquí está la clave:
 > **"Cada día que puedo moverlo o incluso intentar levantar un peso pequeño, lo veo como una victoria."**
 
 No es conformismo. Es una redefinición radical de lo que significa ganar.
+
+![Una figura humana abstracta saltando desde obstáculos que se transforman en trampolines de luz, contra un cielo nocturno](/blog/post03-trampolin-luz.webp)
 
 ## El trampolín invisible
 
@@ -224,6 +236,8 @@ Esa pregunta, repetida cada mañana, es la definición operativa de la resilienc
     excerpt:
       "Durante cinco años no ves absolutamente nada en la superficie. Pero bajo tierra, se teje un sistema de raíces increíblemente complejo. Y cuando brota, crece 25 metros en seis semanas.",
     content: `
+![Raíces bioluminiscentes extendiéndose bajo tierra oscura, formando una red compleja que brilla en tonos azul y violeta](/blog/post04-raices-bioluminiscentes.webp)
+
 ## La parcela estéril de Samuel
 
 En *AÚN* cuento la historia de Samuel, un jardinero de 78 años apodado "el Mago". Lleva 15 años intentando cultivar bambú moso en una parcela que permanece obstinadamente estéril. Los vecinos la llaman "el rincón triste de Samuel".
@@ -239,6 +253,8 @@ Entonces aparece la voz de Jeff Bezos, y le cuenta algo que Samuel no esperaba:
 Y luego la frase que lo cambia todo:
 
 > **"Usted no ha estado cuidando una parcela vacía durante quince años. Ha estado invirtiendo en un sistema de raíces. El problema es que ha estado juzgando un proyecto a largo plazo con una mentalidad a corto plazo."**
+
+![Un tallo de bambú gigante atravesando la oscuridad hacia un cielo estrellado, con partículas de luz ascendiendo a su alrededor](/blog/post04-bambu-emerge.webp)
 
 ## La biología del bambú moso
 
@@ -290,6 +306,8 @@ Pero cada día que riegas, cada día que cuidas, cada día que persistes — est
     excerpt:
       "Juan Pablo eligió Chichén Itzá sobre los delfines. 'Papá, puedo nadar con delfines en muchas partes del mundo, pero solo aquí está la pirámide.' Tenía 8 años.",
     content: `
+![La silueta de un niño pequeño contemplando la pirámide de Chichén Itzá al amanecer, con rayos dorados atravesando la niebla](/blog/post05-nino-piramide.webp)
+
 ## El dilema de Cancún
 
 Estábamos de vacaciones familiares en Cancún. Todo estaba planeado: nadar con delfines. Los boletos comprados, la emoción lista.
@@ -317,6 +335,8 @@ Vi a un pequeño maestro que, con inocencia y orgullo, me recordó el valor de n
 Un niño de 8 años acababa de articular, sin saberlo, uno de los principios más profundos de la vida:
 
 **No todo se puede repetir. Hay experiencias que son irrepetibles, y la sabiduría está en reconocerlas.**
+
+![Un globo terráqueo disolviéndose en miles de puertas abiertas que flotan en un espacio cósmico luminoso](/blog/post05-mundo-aula.webp)
 
 ## El aprendizaje no tiene aula
 
@@ -355,6 +375,8 @@ A veces las mejores decisiones de tu vida te esperan a las 4 de la mañana, cuan
     excerpt:
       "El resentimiento es un veneno que tomamos esperando que muera la otra persona. El perdón no es para el otro — es un acto unilateral de soberanía emocional.",
     content: `
+![Un ancla masiva de hierro oxidado transformándose en un cohete de luz, con cadenas rompiéndose en partículas doradas](/blog/post06-ancla-cohete.webp)
+
 ## La historia de Alejandro
 
 En *AÚN* cuento la historia de Alejandro, un arquitecto exitoso de 38 años. Sus diseños son limpios, ordenados, controlados — todo lo contrario a su vida interior, que es un caos de escombros emocionales.
@@ -389,6 +411,8 @@ Luego escribe la segunda carta — la carta cohete:
 
 *"Te escribo no porque espere que la leas, sino porque necesito escribirla. Te perdono. Y al escribir esto, me doy cuenta de que esas palabras no son para ti. Son para mí. Me perdono a mí mismo por haberme aferrado a la rabia durante tanto tiempo."*
 
+![Una carta ardiendo en llamas azules que liberan luciérnagas hacia un cielo nocturno, creando constelaciones nuevas](/blog/post06-carta-luciernaga.webp)
+
 ## La verdad sobre el perdón
 
 > **"El perdón no es para él, Alejandro. Él probablemente ni siquiera sabe que necesita ser perdonado. El perdón es para ti. Es la decisión de dejar de cargar con un ancla de cien kilos de resentimiento a tus espaldas todos los días."**
@@ -420,6 +444,8 @@ Si hay alguien a quien no has perdonado — un padre, un socio, un amigo, inclus
     excerpt:
       "Las ideas más ridículas pueden ser las más innovadoras. Un niño de 8 años creó un Heladito Picantito de Pepinillo Extra-Dulce, y nadie lo tomó en serio. Hasta que lo probaron.",
     content: `
+![Un helado surrealista y luminoso con ingredientes imposibles flotando en un espacio de colores vibrantes y humo mágico](/blog/post07-helado-surreal.webp)
+
 ## La idea más loca del barrio
 
 En *El Quiosco de las Ideas Locas* narro la historia de Tomás, un niño de 8 años con una imaginación desbordante. Su primer producto para su quiosco ambulante "El Rincón de los Soñadores" fue algo que ningún adulto cuerdo habría intentado:
@@ -448,6 +474,8 @@ El Heladito Picantito no es una receta. Es una filosofía:
 **La diferenciación radical es la única estrategia que no se puede copiar.**
 
 Cualquiera puede hacer vainilla. Cualquiera puede seguir la receta que ya existe. Pero crear algo que suena absurdo, que desafía la categoría, que hace que la gente se detenga y diga "¿qué?" — eso requiere algo que escasea en el mundo adulto: el coraje de parecer ridículo.
+
+![Bombillas de diferentes tamaños flotando en la oscuridad, algunas rotas y una brillando intensamente con luz eléctrica azul](/blog/post07-bombillas-iteracion.webp)
 
 ## De llavero invisible a llavero fantástico
 
@@ -491,6 +519,8 @@ En lugar de evitarlo, Tomás investigó sus intereses (la astronomía), personal
     excerpt:
       "Un cohete que explota en la plataforma es un fracaso espectacular. Pero tus ideas no ejecutadas son peores — son un desperdicio de potencial. Cada fracaso es una versión beta.",
     content: `
+![Maquetas arquitectónicas abandonadas en un sótano, iluminadas por rayos de luz dorada que entran por una ventana alta](/blog/post08-maquetas-sotano.webp)
+
 ## El arquitecto atrapado en el sótano
 
 En *AÚN* presento a Santiago, un arquitecto de 50 años que guarda maquetas de proyectos rechazados en su sótano. La "Torre Helios", "El Ágora", "El Museo de la Luz" — fantasmas de lo que pudo ser.
@@ -508,6 +538,8 @@ Cuando Musk aparece en su sótano y ve las maquetas, su diagnóstico es brutal:
 Y luego:
 
 > **"¿El mundo nunca estaba preparado? ¡El mundo nunca está preparado! ¿Crees que el mundo estaba preparado para los coches eléctricos cuando todos amaban la gasolina? El trabajo no es esperar a que el mundo esté preparado. El trabajo es preparar al mundo."**
+
+![Un cohete desintegrándose en el espacio pero sus fragmentos se reensamblan en múltiples cohetes nuevos, con estelas de fuego](/blog/post08-cohete-prototipos.webp)
 
 ## La mentalidad del prototipo
 
@@ -553,6 +585,8 @@ Santiago escribió en su cuaderno: **"Proyectos que todavía pueden ser."** La p
     excerpt:
       "Estaba atrapado en un ciclo de deudas, gastos impulsivos y falta de ahorro. Una noche, sentado con papeles desordenados, me hice la pregunta que lo transformó todo.",
     content: `
+![Cadenas hechas de monedas y billetes disolviéndose en mariposas doradas que vuelan hacia un horizonte luminoso](/blog/post09-cadenas-monedas.webp)
+
 ## El laberinto financiero
 
 Mirando hacia atrás en los días en que mis finanzas eran un laberinto incomprensible, me doy cuenta de cómo esa confusión me ataba de manos.
@@ -587,6 +621,8 @@ No necesitas ser Warren Buffett. Necesitas ser constante. Un poco cada mes, dura
 ### 4. Las deudas malas son cadenas
 Hay deudas que te hacen crecer (una propiedad, un negocio, educación). Y hay deudas que te hunden (tarjetas de crédito, compras impulsivas). Saber la diferencia es la primera lección de alfabetismo financiero.
 
+![Una figura en la cima de una montaña de engranajes dorados contemplando un amanecer, con la brisa transformando números en luz](/blog/post09-libertad-financiera.webp)
+
 ## La conexión con la libertad
 
 La libertad financiera no es ser millonario. Es llegar a un punto donde tus decisiones de vida no estén dictadas por la escasez.
@@ -616,6 +652,8 @@ Porque no puedes navegar si no sabes tu punto de partida. Y controlar tus finanz
     excerpt:
       "Las 4 Ls no son compartimentos. Son instrumentos de una sinfonía. El verdadero Logro no es un destino — es el estado donde todas tus facetas viven en coherencia.",
     content: `
+![Un garaje-laboratorio donde plantas emiten ondas musicales visibles en tonos neón, mezclando naturaleza y tecnología](/blog/post10-garaje-musica.webp)
+
 ## El hombre del garaje
 
 En el último capítulo de *AÚN*, presento a Carlos, un ingeniero de 40 años, Director de Innovación en una empresa de telecomunicaciones. Alma de poeta, líder pragmático, padre presente pero apagado.
@@ -633,6 +671,8 @@ Steve Jobs aparece y le dice algo que desarma toda su lógica:
 Y luego la revelación central:
 
 > **"Tu problema es que crees que tus 'L' son enemigas. Crees que tienes que elegir entre el Liderazgo en tu empresa y la Locura en tu garaje. ¡Eso es una estupidez! La verdadera innovación, el verdadero Logro, ocurre en la intersección."**
+
+![Cuatro haces de luz de colores diferentes convergiendo en un punto central que irradia luz blanca pura, formando una sinfonía visual](/blog/post10-sinfonia-4l.webp)
 
 ## Las 4 Ls como sistema, no como menú
 
@@ -691,6 +731,8 @@ No has encontrado la forma de unir tu trabajo y tu pasión... **aún**.
     excerpt:
       "Ernesto el cartero no sabía de helados ni de llaveros mágicos. Pero sabía escribir una solicitud formal que abriera puertas. A veces lo que necesitas no es talento — es equipo.",
     content: `
+![Manos de diferentes texturas y colores extendiéndose para formar un puente luminoso sobre un abismo oscuro](/blog/post11-manos-puente.webp)
+
 ## El obstáculo que Tomás no podía resolver solo
 
 En *El Quiosco de las Ideas Locas*, hay un momento donde Tomás se enfrenta a algo que no puede resolver con creatividad: **la burocracia**.
@@ -733,6 +775,8 @@ La mejor amiga de Tomás le dio tres super consejos para manejar la burocracia:
 2. **"Crea un kit de emergencia creativo"** — Preparación para imprevistos. No puedes evitar los problemas, pero puedes estar listo.
 3. **"Haz que el proceso sea divertido"** — Convierte las tareas aburridas en actividades sociales con música y amigos.
 
+![Una constelación de puntos luminosos interconectados formando la silueta de personas, como una red neuronal humana](/blog/post11-constelacion-equipo.webp)
+
 ## La regla que aplica a cualquier edad
 
 > **"Sin el apoyo de sus amigos como Jaci, Ernesto y Don Rufino, y sin la confianza de sus vecinos, el éxito de Tomás no habría sido posible."**
@@ -760,6 +804,8 @@ El emprendedor más fuerte no es el que sabe más. Es el que sabe **rodearse mej
     excerpt:
       "La verdadera brújula no apunta al norte. Apunta a lo que te emociona, lo que te desafía, lo que te hace sentir vivo. No has encontrado tu verdadero norte... aún.",
     content: `
+![Un mapa antiguo desintegrándose en arena del desierto, revelando un cielo estrellado debajo de sus fragmentos](/blog/post12-mapa-estrellas.webp)
+
 ## La ejecutiva perdida en el Sahara
 
 En *AÚN* cuento la historia de Valeria, una ejecutiva de 33 años cuya vida era "un mapa perfecto" con líneas de colores trazando carrera, vida personal y finanzas.
@@ -782,6 +828,8 @@ La mayoría de nosotros vivimos esclavizados al mapa: el plan de carrera, la rut
 Pero Branson lo pone en perspectiva:
 
 > **"Tu mapa se ha roto. ¡Felicidades! Es lo mejor que te podía haber pasado. Porque ahora, por primera vez, tienes la oportunidad de levantar la vista del papel y mirar las estrellas."**
+
+![Una brújula antigua y rota cuya aguja apunta hacia un corazón de luz en medio de un desierto cinematográfico al atardecer](/blog/post12-brujula-corazon.webp)
 
 ## La brújula interna
 
